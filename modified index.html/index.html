@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="myapp">
+    <head>
+        <meta charset="utf-8">
+        <title>Using UI-Router</title>
+        <meta name="description" content="Using UI-Router">        
+        <script src="js/angular.min.js"></script>
+        <script src="js/angular-ui-router.min.js"></script>
+        <script src="js/myapp.js"></script>
+    </head>
+    <body>       
+        <ul>
+            <li><a ui-sref="main" ui-sref-active="active">Go to Home</a></li>
+            <li><a ui-sref="second.second-two" ui-sref-active="active">Go to Second</a></li>
+        </ul>
+        
+        <h1>Watch the content below changes</h1>
+        <div style="border-style: dotted;padding: 10px 10px 10px">
+            <ui-view></ui-view>
+        </div>        
+    </body>
+</html>
